@@ -1,0 +1,31 @@
+.section-about
+  position: relative
+  h3
+    color: $textColor
+    font-style: normal
+  .row
+    margin: 0px
+  .row-container
+    position: relative
+    .founders-container
+      text-align: center
+      width: 100%
+      .founder-container
+        padding-bottom: 20px
+        .founder-img
+          border-radius: 200px
+        h4
+          text-transform: uppercase
+        p
+          font-weight: 100
+          font-style: italic
+  .desc-text
+    text-align: center
+
+@media (max-width: 991px)
+  .section-about
+    // height: 1300px
+  .founders-container
+    // width: 100%
+    .founder-img
+      +size(150px)

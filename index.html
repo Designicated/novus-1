@@ -1,0 +1,44 @@
+---
+---
+
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+  <!-- <script src="//code.jquery.com/jquery-1.10.2.min.js"></script> -->
+  <!-- <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+  <!-- <meta name="description" content="{{ site.data.settings.seo.description }}"> -->
+  <!-- <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
+  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}"> -->
+
+  <title>{{ site.data.settings.title }}</title>
+  <!-- <link rel="stylesheet" href="{{ "/assets/stylesheets/style.css" | prepend: site.baseurl }}"> -->
+  <link rel="stylesheet" href="assets/css/all.css">
+
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body onload="hasLoaded()" class="noScroll">
+
+  {% include header.html %}
+
+  {% include about.html %}
+
+  {% include shirts.html %}
+
+  {% include prices.html %}
+
+  {% include contact.html %}
+
+  {% include footer.html %}
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/bootstrap.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- <script src="assets/javascript/bootstrap.js"></script> -->
+<script src="assets/js/functions.js"></script>
+</body>
+</html>

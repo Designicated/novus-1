@@ -1,0 +1,25 @@
+<section class="section-about">
+  <h3 id="about">About</h3>
+  <!-- https://app.brix.io/brix/preview.html?p=811 -->
+  <!-- http://shoelace.io/ -->
+    <div class="row row-container">
+      <div class="col-sm-1 col-md-3"></div>
+      <div class="col-sm-12 col-md-6 founders-container">
+        {% for founder in site.data.settings.founderPics %}
+        <div class="col-sm-12 col-md-4 founder-container">
+          <img class="founder-img" src="../assets/img/founders/{{founder.pic}}" alt="">
+          <h4>{{founder.name}}</h4>
+          <p>{{founder.pos}}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-xs-1 col-md-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="desc-text">
+          Awesome text about our company, our mission and vision for future
+        </p>
+      </div>
+    </div>
+</section>

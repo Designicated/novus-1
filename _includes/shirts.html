@@ -1,0 +1,15 @@
+<section class="section-shirts">
+  <h3 id="shirts">Shirts</h3>
+  <div class="row shirt-row">
+    <div class="shirt-container">
+      {% for shirt in site.data.settings.shirts %}
+        <div class="oneshirt">
+          <figure class="shirt-img">
+            <img src="../assets/img/shirts/{{shirt.pic}}" alt="">
+          </figure>
+          <p class="shirt-name">{{shirt.name}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

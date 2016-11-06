@@ -1,0 +1,52 @@
+.section-prices
+  position: relative
+  h3
+    color: $textColor
+    font-style: normal
+  .container-prices
+    width: 100%
+    text-align: center
+
+    .one-price
+      text-align: center
+      height: 50px
+      position: relative
+      .shirt-name
+        position: absolute
+        font-weight: bold
+        display: inline-block
+        left: 30%
+      .viewshirt
+        position: absolute
+        display: inline-block
+        left: 25%
+        .hover-data
+          position: absolute
+          box-shadow: 0px 0px 10px $accent
+          z-index: 1
+          left: 30%
+          top: 10px
+          background-color: white
+          display: none
+        &:hover
+          cursor: pointer
+          .hover-data
+            display: block !important
+      .shirt-price
+        position: absolute
+        display: inline-block
+        left: 70%
+    .separator
+      width: 50%
+      display: inline-block
+      p
+        border-bottom: 2px dotted $accent
+
+@media screen and (max-width: 450px)
+  .one-price
+    .viewshirt
+      display: none !important
+    .shirt-name
+      left: 10% !important
+  .separator
+    width: 80% !important

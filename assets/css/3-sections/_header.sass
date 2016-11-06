@@ -1,0 +1,88 @@
+header
+  height: 100vh
+  background:
+    repeat: no-repeat
+    size: cover
+    position: 50% 50%
+    image: url(../img/#{$headerbg})
+  .navbar-default
+    background-color: white
+    border-color: transparent
+    max-height: 60px
+    padding-bottom: 3px
+    .nav-collapse
+      background-color: white
+    .header-logo
+      color: $accent
+      font-weight: bold
+      text-transform: uppercase
+      opacity: 0.8
+      &:hover
+        border-bottom: none
+        color: $accent-light
+        border-bottom: 1px solid $accent-light
+        opacity: 1
+    //   padding: 0px 50px 0px 50px
+    //   background:
+    //     repeat: no-repeat
+    //     size: 50px 50px
+    //     // position: 30px 20px
+    //     // margin-top: 10px
+    //     image: url(../img/#{$headerbg})
+    .nav-collapse
+      text-align: center
+      .nav-center
+        display: inline-block
+        float: none
+        .fix-links
+          color: $accent
+          opacity: 0.8
+          padding-right: 25px
+          // width: 50px
+          &:hover
+            color: $accent-light
+            border-bottom: 1px solid $accent-light
+            opacity: 1
+  h1
+    @extend %small-bold
+    text-align: center
+    // font-family: $Italianno
+    color: white
+    text-transform: uppercase
+    letter-spacing: 0.3em
+    margin-bottom: 15px
+    clear: both
+    padding-top: 270px
+    cursor: default
+  .kicker
+    text-align: center
+    @extend %small-bold
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    color: white
+    line-height: 1
+    cursor: default
+.clicked
+  border-bottom: 1px solid $accent
+  text-transform: uppercase
+
+.notloaded
+  opacity: 0
+
+.headerLoaded
+  animation: slideHeaderIn 600ms ease-in forwards
+
+.noScroll
+  overflow: hidden
+
+
+@keyframes slideHeaderIn
+  0%
+    opacity: 0
+    transform: scale(0.3) rotateX(90deg)
+  60%
+    transform: scale(1.2)
+  90%
+    transform: scale(0.9)
+  100%
+    opacity: 1

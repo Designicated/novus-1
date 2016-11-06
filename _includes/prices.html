@@ -1,0 +1,29 @@
+<section class="section-prices">
+  <h3 id="prices">Prices</h3>
+  <div class="container-prices">
+    <!-- https://www.youtube.com/watch?v=_j27jNlgeQ8 -->
+    <!-- https://codepen.io/caraujo/pen/LVPzxO?css-preprocessor=less - awesome -->
+    {% for shirt in site.data.settings.shirts %}
+      <div data-name = {{shirt.name}} data-pic={{shirt.pic}} class="one-price">
+        <span class="glyphicon glyphicon-eye-open viewshirt">
+          <div class="hover-data">
+            <img class="hover-img" src="../assets/img/shirts/{{shirt.pic}}" alt="">
+            <p class="hover-name">{{shirt.name}}</p>
+          </div>
+        </span>
+        <p class="shirt-name">{{shirt.name}}</p>
+        <p class="shirt-price">{{shirt.price}}</p>
+      </div>
+    {% endfor %}
+
+    <div class="separator">
+      <p class="sep"></p>
+    </div>
+    {% for additionalprice in site.data.settings.additionalprices %}
+      <div class="one-price">
+        <p class="shirt-name">{{additionalprice.name}}</p>
+        <p class="shirt-price">{{additionalprice.price}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
